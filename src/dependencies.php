@@ -37,6 +37,9 @@ $container[\App\Controllers\AuthController::class] = function ($c) {
 $container[\App\Controllers\KegiatanController::class] = function ($c) {
     return new \App\Controllers\KegiatanController($c['db']);
 };
+$container[\App\Controllers\KegiatanByIdController::class] = function ($c) {
+    return new \App\Controllers\KegiatanByIdController($c['db']);
+};
 $container[\App\Controllers\MahasiswaController::class] = function ($c) {
     return new \App\Controllers\MahasiswaController($c['db']);
 };
